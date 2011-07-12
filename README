@@ -1,0 +1,24 @@
+This is the README file for Haiti Reporter, written by Dennis Cahillane (dcahilla@gmail.com) for Digital Democracy (www.digital-democracy.org). 
+
+Haiti Reporter is GPL, except for the modified CSS file I found somewhere on the Internet.
+
+To get Haiti Reporter working on your system:
+
+use the database.sql file to create your MySQL database with mysqldump
+
+add a mysql user with read/write privileges to the tables
+
+put that user's credentials into the login.php file
+
+add a salt to changepassword.php and adduser.php. (Exercise #1: rewrite these files to use bcrypt). The relevant variables are called $salt1 and $salt2
+
+To create the first user, you'll need to manually salt and hash your password buy cutting and pasting the relevant code from adduser.php into a new php file, then INSERTing the result into the table using the mysql command line tool.
+
+Put all the files in an apache html directory, make sure that your apache httpd.conf supports php. Then visit index.php in your browser and log in. I hope you speak French or Haitian Creole.
+
+If this is a public site use SSL to avoid man in the middle password attacks.
+
+To edit fields in the dossier, you need to edit five files. insert.php insertform.php update.php updaterecord.php view.php
+
+When editting fields, you should not completely delete old fields. If you do, that will mess up old records that use that field.
+
