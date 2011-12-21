@@ -50,7 +50,7 @@ $deleteusers = sanitizeMySQL($_POST['deleteusers']);
 
 $query = "SELECT id FROM users WHERE username='$username'";
 $id = mysql_query($query);
-if (!$id)	
+if (!$id)
 echo "<b>$username</b> not found: $query<br />" .
 mysql_error() . "<br /><br />";
 
@@ -60,14 +60,14 @@ if (!$deletepeople)
 $deletepeople = 0;
 if (!$deleteusers)
 $deleteusers = 0;
-		
-		
+
+
 $query = "UPDATE users SET viewnames = '$viewnames', deletepeople =
 		'$deletepeople', deleteusers = '$deleteusers' WHERE username = '$username'";
 
 $result = mysql_query($query);
 
-if (!$result)	
+if (!$result)
 echo "EDIT failed: $query<br />" .
 mysql_error() . "<br /><br />";
 else
@@ -93,7 +93,7 @@ return $var;
 
 function sanitizeMySQL($var)
 {
-$var = sanitizeString($var); 
+$var = sanitizeString($var);
 $var = mysql_real_escape_string($var);
 return $var;
 }

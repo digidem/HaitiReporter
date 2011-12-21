@@ -56,7 +56,7 @@ echo <<<_END
 </div>
 <div id="panel">
   <div class="right">
-	  
+
 <form name="form" action="adduser.php" method="post">
 		<h1>Add New User</h1><br />
 Username:  <p class="input"><input type="text" name="username"></p>
@@ -113,8 +113,8 @@ Username:  <p class="input"><input type="text" name="username"></p>
 </body>
 </html>
 _END;
-} 
-else 
+}
+else
 {
 echo <<<_END
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

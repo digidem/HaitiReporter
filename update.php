@@ -544,7 +544,7 @@ Moment du viol:<select name="heureduviolhour">
   <option <?php if ($row['lieuduviol'] == "Leogane") echo $select; ?>>Leogane</option>
   <option <?php if ($row['lieuduviol'] == "Bon Repos") echo $select; ?>>Bon Repos</option>
   <option <?php if ($row['lieuduviol'] == "Delmas") echo $select; ?>>Delmas</option>
-  <option <?php if ($row['lieuduviol'] == "Carrefour Feuilles") echo $select; ?>>Carrefour Feuilles</option> 
+  <option <?php if ($row['lieuduviol'] == "Carrefour Feuilles") echo $select; ?>>Carrefour Feuilles</option>
   <option <?php if ($row['lieuduviol'] == "Champs de Mars") echo $select; ?>>Champs de Mars</option>
   <option <?php if ($row['lieuduviol'] == "Autres") echo $select; ?>>Autres</option>
 </select><br><br>
@@ -780,7 +780,7 @@ Fichier 2 (audio):<br /><input name="userfile2" type="file" id="userfile2">
  </div>
  </div>
 
-		
+
 		<div class="divider"></div>
 
 	<div class="footer">

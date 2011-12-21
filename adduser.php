@@ -84,7 +84,7 @@ VALUES ( '$username', '$token','$viewnames', '$deletepeople',
 
 $result = mysql_query($query);
 
-if (!$result)	
+if (!$result)
 echo "INSERT failed: $query<br />" .
 mysql_error() . "<br /><br />";
 else
@@ -101,7 +101,7 @@ return $var;
 
 function sanitizeMySQL($var)
 {
-$var = sanitizeString($var); 
+$var = sanitizeString($var);
 $var = mysql_real_escape_string($var);
 return $var;
 }
