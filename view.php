@@ -117,8 +117,8 @@ Statut / Stati:<b><?php echo $row['statut']; ?></b><br><br>
 Date et Heure du viol / Dat ak le kadejak la fet:
 Mois / Mwa: <b><?php echo $row['violmonth']; ?></b><br />
 Jour / Jou:<b><?php echo $row['violday']; ?></b><br />
-Annee / Ane:<b><?php echo $row['violyear']; ?></b><br><br> 
-Heure du viol / Lé kadejak la fet:<b><?php echo $row['heureduviol']; ?></b><br><br> 
+Annee / Ane:<b><?php echo $row['violyear']; ?></b><br><br>
+Heure du viol / Lé kadejak la fet:<b><?php echo $row['heureduviol']; ?></b><br><br>
 Moment du viol:<b><?php echo $row['heureduviolhour']; ?>:<?php echo $row['heureduviolminute']; ?> <?php echo $row['heureduviolampm']; ?></b><br />
 
 Commune:<b><?php echo $row['commune']; ?></b><br />

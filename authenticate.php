@@ -5,7 +5,7 @@ if (!$db_server) die("Unable to connect to MySQL: " . mysql_error());
 mysql_select_db($database)
 or die("Unable to select database: " . mysql_error());
 
-if (isset($_SERVER['PHP_AUTH_USER']) && 
+if (isset($_SERVER['PHP_AUTH_USER']) &&
     isset($_SERVER['PHP_AUTH_PW']))
   {
     $un_temp = mysql_entities_fix_string($_SERVER['PHP_AUTH_USER']);

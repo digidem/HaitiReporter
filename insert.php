@@ -63,10 +63,10 @@ $organizationother = sanitizeMySQL($_POST['organizationother']);
 $familyname = sanitizeMySQL($_POST['familyname']);
 $name = sanitizeMySQL($_POST['name']);
 $dansuncamp = sanitizeMySQL($_POST['dansuncamp']);
-$birthday = sanitizeMySQL($_POST['birthday']);  
-$birthmonth = sanitizeMySQL($_POST['birthmonth']);  
-$birthyear = sanitizeMySQL($_POST['birthyear']);   
-$enfant = sanitizeMySQL($_POST['enfant']);   
+$birthday = sanitizeMySQL($_POST['birthday']);
+$birthmonth = sanitizeMySQL($_POST['birthmonth']);
+$birthyear = sanitizeMySQL($_POST['birthyear']);
+$enfant = sanitizeMySQL($_POST['enfant']);
 $lieudenaissance = sanitizeMySQL($_POST['lieudenaissance']);
 $adresse = sanitizeMySQL($_POST['adresse']);
 $numerodetelephone = sanitizeMySQL($_POST['numerodetelephone']);
@@ -214,7 +214,7 @@ VALUES ( '$month', '$day','$year', '$interview',
 
 $result = mysql_query($query);
 $insert_id = mysql_insert_id(); // the new record's id in the SQL database
-if (!$result)	
+if (!$result)
 echo "INSERT failed: $query<br />" .
 mysql_error() . "<br /><br />";
 
@@ -289,7 +289,7 @@ else
 $query = "UPDATE people SET filename = '$newFileName', filename2 = '$newFileName2' WHERE id='$insert_id'";
 $result = mysql_query($query);
 $insert_id = mysql_insert_id(); // the new record's id in the SQL database
-if (!$result)	
+if (!$result)
 echo "INSERT failed: $query<br />" .
 mysql_error() . "<br /><br />";
 mysql_close();
@@ -304,7 +304,7 @@ return $var;
 
 function sanitizeMySQL($var)
 {
-  // $var = sanitizeString($var); 
+  // $var = sanitizeString($var);
 $var = mysql_real_escape_string($var);
 return $var;
 }
@@ -316,7 +316,7 @@ return $var;
  </div>
  </div>
 
-		
+
 		<div class="divider"></div>
 
 	<div class="footer">

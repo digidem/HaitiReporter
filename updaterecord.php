@@ -50,8 +50,8 @@ $query1 = "SET NAMES utf8";
 mysql_query($query1);
 // end Unicode support
 
-$id = sanitizeMySQL($_POST['id']); 
-$month = sanitizeMySQL($_POST['month']); 
+$id = sanitizeMySQL($_POST['id']);
+$month = sanitizeMySQL($_POST['month']);
 $day = sanitizeMySQL($_POST['day']);
 $year = sanitizeMySQL($_POST['year']);
 $interview = sanitizeMySQL($_POST['interview']);
@@ -63,9 +63,9 @@ $name = sanitizeMySQL($_POST['name']);
 $dansuncamp = sanitizeMySQL($_POST['dansuncamp']);
 $enfant = sanitizeMySQL($_POST['enfant']);
 
-$birthday = sanitizeMySQL($_POST['birthday']);  
-$birthmonth = sanitizeMySQL($_POST['birthmonth']);  
-$birthyear = sanitizeMySQL($_POST['birthyear']);  
+$birthday = sanitizeMySQL($_POST['birthday']);
+$birthmonth = sanitizeMySQL($_POST['birthmonth']);
+$birthyear = sanitizeMySQL($_POST['birthyear']);
 // $lieudenaissance = sanitizeMySQL($_POST['lieudenaissance']);
 $lieudenaissance = mysql_real_escape_string($_POST['lieudenaissance']);
 $adresse = sanitizeMySQL($_POST['adresse']);
@@ -182,44 +182,44 @@ else
 
 $query = "UPDATE people SET month = '$month', day = '$day', year = '$year',
 interview = '$interview', plan = '$plan',
-organization1 = '$organization1', organizationother = '$organizationother', 
-familyname = '$familyname', name = '$name', birthday = '$birthday', 
-birthmonth = '$birthmonth', birthyear = '$birthyear', 
+organization1 = '$organization1', organizationother = '$organizationother',
+familyname = '$familyname', name = '$name', birthday = '$birthday',
+birthmonth = '$birthmonth', birthyear = '$birthyear',
 lieudenaissance = '$lieudenaissance', adresse = '$adresse',
-numerodetelephone = '$numerodetelephone', profession = '$profession', 
+numerodetelephone = '$numerodetelephone', profession = '$profession',
 religion = '$religion', organization2 = '$organization2',
 statut = '$statut',
 lieuduviol = '$lieuduviol', lieudeviolautres = '$lieudeviolautres',
-indiquerzone = '$indiquerzone', lieu = '$lieu', 
+indiquerzone = '$indiquerzone', lieu = '$lieu',
 lieuautres = '$lieuautres', lapersonne = '$lapersonne', nombre = '$nombre',
-sexe = '$sexe', nombrequiaparticipe = '$nombrequiaparticipe', 
+sexe = '$sexe', nombrequiaparticipe = '$nombrequiaparticipe',
 adressadres = '$adressadres', lienrelasyon = '$lienrelasyon',
-lieninfogang = '$lieninfogang', lieninfoinconnu = '$lieninfoinconnu', 
+lieninfogang = '$lieninfogang', lieninfoinconnu = '$lieninfoinconnu',
 lieninfopolice = '$lieninfopolice',
-lieninfopreciser = '$lieninfopreciser', 
+lieninfopreciser = '$lieninfopreciser',
 apreciserpresize = '$apreciserpresize', typedagressionmeutre = '$typedagressionmeutre',
-typedagressiondisparition = '$typedagressiondisparition', 
+typedagressiondisparition = '$typedagressiondisparition',
 typedagressiondestruction = '$typedagressiondestruction',
-typedagressionarrestation = '$typedagressionarrestation', 
+typedagressionarrestation = '$typedagressionarrestation',
 typedagressionkidnapping = '$typedagressionkidnapping',
-typedagressionmenace = '$typedagressionmenace', 
+typedagressionmenace = '$typedagressionmenace',
 typedagressionviol = '$typedagressionviol',
-typedagressionassaut = '$typedagressionassaut', comment = '$comment', 
+typedagressionassaut = '$typedagressionassaut', comment = '$comment',
 ouestcequil = '$ouestcequil', queluniforme = '$queluniforme',
-portaitdesmasques = '$portaitdesmasques', desarmes = '$desarmes', 
+portaitdesmasques = '$portaitdesmasques', desarmes = '$desarmes',
 plan2 = '$plan2', sexe2 = '$sexe2', sexe3 = '$sexe3',
-siouinom = '$siouinom', laraison = '$laraison', temoins = '$temoins', 
+siouinom = '$siouinom', laraison = '$laraison', temoins = '$temoins',
 temoins2 = '$temoins2', contactes = '$contactes',
-courant = '$courant', autorites = '$autorites', 
+courant = '$courant', autorites = '$autorites',
 typedautoritepolice = '$typedautoritepolice',
-typedautoriteCASEC = '$typedautoriteCASEC', 
+typedautoriteCASEC = '$typedautoriteCASEC',
 typedautoriteJuge = '$typedautoriteJuge',
-typedautoriteMagistrat = '$typedautoriteMagistrat', 
+typedautoriteMagistrat = '$typedautoriteMagistrat',
 typedautoriteAutre = '$typedautoriteAutre',
 typedautoritedautre = '$typedautoritedautre',
-typedautoritedautre2 = '$typedautoritedautre2', 
+typedautoritedautre2 = '$typedautoritedautre2',
 medicale = '$medicale', oukikote = '$oukikote', besoins = '$besoins',
-dommage = '$dommage', maison = '$maison', organization3 = '$organization3', 
+dommage = '$dommage', maison = '$maison', organization3 = '$organization3',
 dommage2 = '$dommage2', dommage3 = '$dommage3',
 province = '$province', violyear = '$violyear', violmonth = '$violmonth',
 violday = '$violday', KOFAVIVcentre = '$KOFAVIVcentre',
@@ -227,7 +227,7 @@ KOFAVIVsant = '$KOFAVIVsant', KOFAVIVagent = '$KOFAVIVagent',
 KOFAVIVminustah = '$KOFAVIVminustah', KOFAVIVhopital = '$KOFAVIVhopital',
 KOFAVIVcommissariat = '$KOFAVIVcommissariat', KOFAVIVautre = '$KOFAVIVautre',
 KOFAVIVautre2 = '$KOFAVIVautre2', matrimoniale = '$matrimoniale',
-heureduviol = '$heureduviol', heureduviolhour = '$heureduviolhour', 
+heureduviol = '$heureduviol', heureduviolhour = '$heureduviolhour',
 heureduviolminute = '$heureduviolminute', heureduviolampm = '$heureduviolampm',
 dansuncamp = '$dansuncamp',
 kikotemoun = '$kikotemoun',
@@ -251,7 +251,7 @@ enfant = '$enfant' WHERE id = '$id'";
 
 $result = mysql_query($query);
 
-if (!$result)	
+if (!$result)
 echo "INSERT failed: $query<br />" .
 mysql_error() . "<br /><br />";
 
@@ -292,7 +292,7 @@ else
 
 $query = "UPDATE people SET filename = '$newFileName' WHERE id='$id'";
 $result = mysql_query($query);
-if (!$result)	
+if (!$result)
 echo "UPDATE failed: $query<br />" .
 mysql_error() . "<br /><br />";
 }
@@ -326,7 +326,7 @@ else
 
 $query = "UPDATE people SET filename2 = '$newFileName2' WHERE id='$id'";
 $result = mysql_query($query);
-if (!$result)	
+if (!$result)
 echo "UPDATE failed: $query<br />" .
 mysql_error() . "<br /><br />";
 }
@@ -345,7 +345,7 @@ return $var;
 
 function sanitizeMySQL($var)
 {
-  // $var = sanitizeString($var); 
+  // $var = sanitizeString($var);
 $var = mysql_real_escape_string($var);
 return $var;
 }

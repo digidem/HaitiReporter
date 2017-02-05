@@ -56,7 +56,7 @@ $query = "DELETE FROM users WHERE username='$username'";
 
 $result = mysql_query($query);
 
-if (!$result)	
+if (!$result)
 echo "DELETE failed: $query<br />" .
 mysql_error() . "<br /><br />";
 else
@@ -73,7 +73,7 @@ return $var;
 
 function sanitizeMySQL($var)
 {
-$var = sanitizeString($var); 
+$var = sanitizeString($var);
 $var = mysql_real_escape_string($var);
 return $var;
 }
@@ -89,4 +89,4 @@ return $var;
 <a href=logout.php>Log Out</a>
 </div>
 </body>
-</html>		
+</html>
